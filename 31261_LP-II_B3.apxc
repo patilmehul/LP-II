@@ -1,0 +1,17 @@
+public class Sample
+{   
+    public Double p {get;set;}
+    public Double n {get;set;}
+    public Double r {get;set;}
+    public Double result {get;set;}
+    public String func {get;set;}
+   
+    public Sample()
+    {
+    }
+   	
+    public void find()
+    {
+        result=p*n*r/100;
+    }
+}

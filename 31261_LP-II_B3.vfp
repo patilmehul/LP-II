@@ -1,0 +1,38 @@
+<apex:page controller="Sample">
+
+<apex:form >
+   
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Principal Amount"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!p}"/>
+            </apex:pageBlockSectionItem>                          
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="No of Years"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!n}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Rate of Interest"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!r}"/>
+            </apex:pageBlockSectionItem>       
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Simple Interest "/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!result}" id="res"/><apex:actionStatus id="sts" startText="Calculating..."/>
+            </apex:pageBlockSectionItem>                                      
+        </apex:pageBlockSection>   
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Calculate Simple Interest" action="{!find}" reRender="res"  status="sts"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+   
+</apex:form>
+</apex:page>
