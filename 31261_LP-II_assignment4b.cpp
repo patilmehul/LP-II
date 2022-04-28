@@ -1,3 +1,5 @@
+// NQueens (Branch and Bound)
+
 #include <bits/stdc++.h>
 using namespace std;
 #define N 8

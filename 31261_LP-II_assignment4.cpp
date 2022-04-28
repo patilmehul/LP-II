@@ -1,5 +1,5 @@
-//TODO: Implement NQueens Problem
-
+// Implement NQueens Problem (Backtracking)
+ 
 #include <bits/stdc++.h>
 using namespace std;
 
